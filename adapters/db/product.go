@@ -23,3 +23,7 @@ func (p *ProductDB) Get(id string) (application.ProductInterface, error) {
 	}
 	return &product, nil
 }
+
+func NewProductDb(db *sql.DB) *ProductDB {
+	return &ProductDB{db: db}
+}
