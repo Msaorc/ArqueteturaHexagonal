@@ -41,7 +41,7 @@ func TestProduct_IsValid(t *testing.T) {
 	product.ID = uuid.NewV4().String()
 	product.Name = "Camiseta"
 	product.Status = application.DISABLED
-	product.Price = 10
+	product.Price = 10.00
 
 	_, err := product.IsValid()
 	require.Nil(t, err)
