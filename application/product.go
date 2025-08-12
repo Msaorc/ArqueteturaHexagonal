@@ -41,6 +41,26 @@ type ProductPersistenceInterface interface {
 	ProductWriter
 }
 
+// Create implements ProductServiceInterface.
+func (p *ProductPersistenceInterface) Create(name string, price float32) (ProductInterface, error) {
+	panic("unimplemented")
+}
+
+// Disable implements ProductServiceInterface.
+func (p *ProductPersistenceInterface) Disable(Product ProductInterface) (ProductInterface, error) {
+	panic("unimplemented")
+}
+
+// Enable implements ProductServiceInterface.
+func (p *ProductPersistenceInterface) Enable(Product ProductInterface) (ProductInterface, error) {
+	panic("unimplemented")
+}
+
+// Get implements ProductServiceInterface.
+func (p *ProductPersistenceInterface) Get(id string) (ProductInterface, error) {
+	panic("unimplemented")
+}
+
 const (
 	DISABLED = "disabled"
 	ENABLED  = "enabled"
