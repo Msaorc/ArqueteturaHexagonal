@@ -15,7 +15,6 @@ import (
 var db, _ = sql.Open("sqlite3", "sqlite.db")
 var productDb = db2.NewProductDb(db)
 var productService = application.NewProductService(productDb)
-var productServiceInterface = productService.Persistence
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
